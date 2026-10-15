@@ -1,0 +1,109 @@
+{
+  "k": 5,
+  "cv_policy": "grouped_depth_interleaved",
+  "n_cases": 360,
+  "label_range": {
+    "min_idx": 10,
+    "max_idx": 80,
+    "voxel_mm": 0.05
+  },
+  "test_rmse_mm_mean": 0.18585765659809111,
+  "test_rmse_mm_std": 0.04203757878008947,
+  "test_r_mean": 0.9868838071823121,
+  "test_r_std": 0.0058269187719398735,
+  "test_r2_mean": 0.9657719850540161,
+  "test_r2_std": 0.013855589974902981,
+  "pooled_test": {
+    "n": 355,
+    "rmse_mm": 0.18999951672532187,
+    "r": 0.9863240326996235,
+    "r2": 0.9656192232906543
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "fold_dir": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_00",
+      "metrics_test": {
+        "split": "test",
+        "n": 75,
+        "r": 0.9885614514350891,
+        "r2": 0.9604759812355042,
+        "rmse_mm": 0.21473559737205505,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_00/stochastic_predictions.csv"
+    },
+    {
+      "fold": 1,
+      "fold_dir": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_01",
+      "metrics_test": {
+        "split": "test",
+        "n": 70,
+        "r": 0.9937863349914551,
+        "r2": 0.983986496925354,
+        "rmse_mm": 0.12752924859523773,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_01/stochastic_predictions.csv"
+    },
+    {
+      "fold": 2,
+      "fold_dir": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_02",
+      "metrics_test": {
+        "split": "test",
+        "n": 70,
+        "r": 0.9903904795646667,
+        "r2": 0.9759955406188965,
+        "rmse_mm": 0.1561395674943924,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_02/stochastic_predictions.csv"
+    },
+    {
+      "fold": 3,
+      "fold_dir": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_03",
+      "metrics_test": {
+        "split": "test",
+        "n": 70,
+        "r": 0.9807700514793396,
+        "r2": 0.9499704241752625,
+        "rmse_mm": 0.22541363537311554,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_03/stochastic_predictions.csv"
+    },
+    {
+      "fold": 4,
+      "fold_dir": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_04",
+      "metrics_test": {
+        "split": "test",
+        "n": 70,
+        "r": 0.9809107184410095,
+        "r2": 0.9584314823150635,
+        "rmse_mm": 0.2054702341556549,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": "outputs/studies/depth_sweep_optical_domains_v1/derived/nn/emission_top_pixel_1d/cv_optical_domains_grouped_v1/fold_04/stochastic_predictions.csv"
+    }
+  ]
+}

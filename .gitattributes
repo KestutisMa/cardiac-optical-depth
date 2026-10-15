@@ -1,0 +1,6 @@
+# Preserve archived artifacts byte-for-byte on all platforms.
+outputs/** -text
+*.pth binary
+*.npy binary
+LICENSE -text
+LICENSE-DATA -text

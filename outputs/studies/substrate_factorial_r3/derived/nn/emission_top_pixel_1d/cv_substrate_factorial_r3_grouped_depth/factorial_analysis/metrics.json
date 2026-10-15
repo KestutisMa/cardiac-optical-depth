@@ -1,0 +1,311 @@
+{
+  "design": {
+    "n": 279,
+    "depths": 31,
+    "thicknesses": 3,
+    "conductivity_multipliers": 3
+  },
+  "full_range": {
+    "n": 279,
+    "rmse_mm": 0.4758440899626763,
+    "mean_error_mm": -0.015243237377495018,
+    "r2": 0.7169655025594905,
+    "r": 0.8521099698019988,
+    "depth_group_bootstrap_95ci": {
+      "rmse_mm": {
+        "lower_95": 0.3869374374368297,
+        "upper_95": 0.5750850017112951
+      },
+      "r2": {
+        "lower_95": 0.5975422944782479,
+        "upper_95": 0.7941724454545891
+      },
+      "r": {
+        "lower_95": 0.7908254414239042,
+        "upper_95": 0.8977657534848971
+      }
+    }
+  },
+  "depth_le_3_mm": {
+    "n": 234,
+    "rmse_mm": 0.4050260551441157,
+    "mean_error_mm": 0.1149860852294497,
+    "r2": 0.7083624793855925,
+    "r": 0.8564924205327634,
+    "depth_group_bootstrap_95ci": {
+      "rmse_mm": {
+        "lower_95": 0.33125152401529295,
+        "upper_95": 0.48395765322572265
+      },
+      "r2": {
+        "lower_95": 0.5268509728569384,
+        "upper_95": 0.8087681183559248
+      },
+      "r": {
+        "lower_95": 0.7879995589970299,
+        "upper_95": 0.9036059970957258
+      }
+    }
+  },
+  "per_setting": [
+    {
+      "conductivity_multiplier": 0.15,
+      "conductivity_reduction_percent": 85.0,
+      "thickness_mm": 0.15,
+      "n": 31,
+      "rmse_mm": 0.3601426849940057,
+      "mean_error_mm": -0.1740791393864541,
+      "r2": 0.8378715580566355,
+      "r": 0.9477504519141936
+    },
+    {
+      "conductivity_multiplier": 0.15,
+      "conductivity_reduction_percent": 85.0,
+      "thickness_mm": 0.25,
+      "n": 31,
+      "rmse_mm": 0.3728899993961141,
+      "mean_error_mm": -0.2381993013043559,
+      "r2": 0.8261913104379576,
+      "r": 0.9537815261727856
+    },
+    {
+      "conductivity_multiplier": 0.15,
+      "conductivity_reduction_percent": 85.0,
+      "thickness_mm": 0.5,
+      "n": 31,
+      "rmse_mm": 0.39139938605802854,
+      "mean_error_mm": -0.27989199469166437,
+      "r2": 0.808508150741748,
+      "r": 0.9532806575518282
+    },
+    {
+      "conductivity_multiplier": 0.2,
+      "conductivity_reduction_percent": 80.0,
+      "thickness_mm": 0.15,
+      "n": 31,
+      "rmse_mm": 0.438400338561015,
+      "mean_error_mm": 0.026439064933407575,
+      "r2": 0.7597564289369843,
+      "r": 0.8925194903109026
+    },
+    {
+      "conductivity_multiplier": 0.2,
+      "conductivity_reduction_percent": 80.0,
+      "thickness_mm": 0.25,
+      "n": 31,
+      "rmse_mm": 0.3818956058673472,
+      "mean_error_mm": -0.040519597068909806,
+      "r2": 0.8176946827740148,
+      "r": 0.9232565592026064
+    },
+    {
+      "conductivity_multiplier": 0.2,
+      "conductivity_reduction_percent": 80.0,
+      "thickness_mm": 0.5,
+      "n": 31,
+      "rmse_mm": 0.3499165628333514,
+      "mean_error_mm": -0.09734128944335457,
+      "r2": 0.8469479988186166,
+      "r": 0.9369891629187977
+    },
+    {
+      "conductivity_multiplier": 0.4,
+      "conductivity_reduction_percent": 60.0,
+      "thickness_mm": 0.15,
+      "n": 31,
+      "rmse_mm": 0.7305412061475295,
+      "mean_error_mm": 0.3243072686656827,
+      "r2": 0.3328869326506412,
+      "r": 0.7808427495298518
+    },
+    {
+      "conductivity_multiplier": 0.4,
+      "conductivity_reduction_percent": 60.0,
+      "thickness_mm": 0.25,
+      "n": 31,
+      "rmse_mm": 0.6109726640648496,
+      "mean_error_mm": 0.22388518433417032,
+      "r2": 0.5333905047068755,
+      "r": 0.8170076454924324
+    },
+    {
+      "conductivity_multiplier": 0.4,
+      "conductivity_reduction_percent": 60.0,
+      "thickness_mm": 0.5,
+      "n": 31,
+      "rmse_mm": 0.4984440141785705,
+      "mean_error_mm": 0.1182106675640228,
+      "r2": 0.6894419559119414,
+      "r": 0.8661683620885058
+    }
+  ],
+  "within_depth_prediction_range_mm": {
+    "median": 0.6444213390350342,
+    "p95": 1.5294193923473358,
+    "maximum": 1.6031404733657837,
+    "by_depth": [
+      {
+        "depth_mm": 0.5,
+        "prediction_range_mm": 1.4496245384216309,
+        "prediction_sd_mm": 0.46354380452576033
+      },
+      {
+        "depth_mm": 0.6,
+        "prediction_range_mm": 0.8887202739715576,
+        "prediction_sd_mm": 0.319871488115296
+      },
+      {
+        "depth_mm": 0.7,
+        "prediction_range_mm": 0.6818126440048218,
+        "prediction_sd_mm": 0.20593543938762043
+      },
+      {
+        "depth_mm": 0.8,
+        "prediction_range_mm": 1.2151544690132141,
+        "prediction_sd_mm": 0.3758281721044392
+      },
+      {
+        "depth_mm": 0.9,
+        "prediction_range_mm": 1.6031404733657837,
+        "prediction_sd_mm": 0.55891463351072
+      },
+      {
+        "depth_mm": 1.0,
+        "prediction_range_mm": 1.5988487005233765,
+        "prediction_sd_mm": 0.544282584707452
+      },
+      {
+        "depth_mm": 1.1,
+        "prediction_range_mm": 1.4445303082466125,
+        "prediction_sd_mm": 0.509589649820262
+      },
+      {
+        "depth_mm": 1.2,
+        "prediction_range_mm": 0.7749671936035156,
+        "prediction_sd_mm": 0.2620007491368015
+      },
+      {
+        "depth_mm": 1.3,
+        "prediction_range_mm": 1.4599900841712952,
+        "prediction_sd_mm": 0.49507539894821134
+      },
+      {
+        "depth_mm": 1.4,
+        "prediction_range_mm": 1.0933820009231567,
+        "prediction_sd_mm": 0.3996373739924638
+      },
+      {
+        "depth_mm": 1.5,
+        "prediction_range_mm": 1.047635555267334,
+        "prediction_sd_mm": 0.38378874164828075
+      },
+      {
+        "depth_mm": 1.6,
+        "prediction_range_mm": 1.025415301322937,
+        "prediction_sd_mm": 0.35116636348239216
+      },
+      {
+        "depth_mm": 1.7,
+        "prediction_range_mm": 1.0847488641738892,
+        "prediction_sd_mm": 0.38909632389912424
+      },
+      {
+        "depth_mm": 1.8,
+        "prediction_range_mm": 1.0226788520812988,
+        "prediction_sd_mm": 0.3696754126426453
+      },
+      {
+        "depth_mm": 1.9,
+        "prediction_range_mm": 0.309950590133667,
+        "prediction_sd_mm": 0.11968821039846192
+      },
+      {
+        "depth_mm": 2.0,
+        "prediction_range_mm": 0.39990663528442383,
+        "prediction_sd_mm": 0.15892787699845012
+      },
+      {
+        "depth_mm": 2.1,
+        "prediction_range_mm": 0.7200952768325806,
+        "prediction_sd_mm": 0.25036568227863976
+      },
+      {
+        "depth_mm": 2.2,
+        "prediction_range_mm": 0.6444213390350342,
+        "prediction_sd_mm": 0.25918903343947514
+      },
+      {
+        "depth_mm": 2.3,
+        "prediction_range_mm": 0.4481637477874756,
+        "prediction_sd_mm": 0.18160926189841736
+      },
+      {
+        "depth_mm": 2.4,
+        "prediction_range_mm": 0.0611116886138916,
+        "prediction_sd_mm": 0.020239583220832035
+      },
+      {
+        "depth_mm": 2.5,
+        "prediction_range_mm": 0.05136275291442871,
+        "prediction_sd_mm": 0.021533472233780798
+      },
+      {
+        "depth_mm": 2.6,
+        "prediction_range_mm": 0.15838074684143066,
+        "prediction_sd_mm": 0.04977871637234099
+      },
+      {
+        "depth_mm": 2.7,
+        "prediction_range_mm": 0.22011446952819824,
+        "prediction_sd_mm": 0.07324112002056926
+      },
+      {
+        "depth_mm": 2.8,
+        "prediction_range_mm": 0.1043100357055664,
+        "prediction_sd_mm": 0.03600110142989199
+      },
+      {
+        "depth_mm": 2.9,
+        "prediction_range_mm": 0.06880331039428711,
+        "prediction_sd_mm": 0.02020882659502274
+      },
+      {
+        "depth_mm": 3.0,
+        "prediction_range_mm": 0.037008047103881836,
+        "prediction_sd_mm": 0.011895749222832647
+      },
+      {
+        "depth_mm": 3.1,
+        "prediction_range_mm": 0.05805563926696777,
+        "prediction_sd_mm": 0.01844565543244261
+      },
+      {
+        "depth_mm": 3.2,
+        "prediction_range_mm": 0.07570290565490723,
+        "prediction_sd_mm": 0.026698445748256545
+      },
+      {
+        "depth_mm": 3.3,
+        "prediction_range_mm": 0.09204268455505371,
+        "prediction_sd_mm": 0.028983504563296167
+      },
+      {
+        "depth_mm": 3.4,
+        "prediction_range_mm": 0.09384799003601074,
+        "prediction_sd_mm": 0.026461312643828505
+      },
+      {
+        "depth_mm": 3.5,
+        "prediction_range_mm": 0.045838356018066406,
+        "prediction_sd_mm": 0.01504693244372724
+      }
+    ]
+  },
+  "checkpoint_sha256": {
+    "fold_00": "400e24ef4658930c193bc53a7f561f6d8e033ffb87bf7fc2ba3da54b3bb55172",
+    "fold_01": "c5c48c57a3890ee4eda76f420d55bb45e25f05a9a1ccb6056b4883fe0c1d22d0",
+    "fold_02": "22bea8bb4540aea0118a0393a823c8009e803041392e988ca06adb6dc0d7eba3",
+    "fold_03": "1f109651efc218d8473c39642b6179d1c4cee79ccc35d65274b0fa9e35652f7b",
+    "fold_04": "e7658eff826558ab339431bd0e21ff91f0f5e2919378cc4b8651919d1969f21f"
+  }
+}

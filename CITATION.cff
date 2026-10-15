@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying article in research publications. Retain the attribution notices in NOTICE when redistributing the licensed code or data. Article DOI will be added when available."
+type: software
+title: "Cardiac optical depth: analysis code and synthetic data"
+version: 1.0.0
+date-released: 2026-10-14
+authors:
+  - family-names: Maciunas
+    given-names: Kestutis
+repository-code: "https://github.com/KestutisMa/cardiac-optical-depth"
+url: "https://github.com/KestutisMa/cardiac-optical-depth"
+license: PolyForm-Noncommercial-1.0.0
+abstract: >-
+  Paper-specific neural-network analysis and prepared synthetic optical traces
+  accompanying Physics-guided deep learning inference of intramural
+  slow-conduction depth from simulated epicardial optical mapping.
+keywords:
+  - cardiac optical mapping
+  - slow conduction
+  - intramural depth
+  - deep learning
+preferred-citation:
+  type: article
+  title: "Physics-guided deep learning inference of intramural slow-conduction depth from simulated epicardial optical mapping"
+  journal: Scientific Reports
+  notes: "Accepted; publication details to be added when available."
+  authors:
+    - family-names: Maciunas
+      given-names: Kestutis
+    - family-names: Marozas
+      given-names: Vaidotas
+    - family-names: Williams
+      given-names: Steven E.
+    - family-names: Williams
+      given-names: Michelle C.
+    - family-names: Guimaraes
+      given-names: Alan Ranieri
+    - family-names: Bodagh
+      given-names: Neil
+    - family-names: Klis
+      given-names: Magda
+    - family-names: Vigneswaran
+      given-names: Vinush
+    - family-names: Gharaviri
+      given-names: Ali
+    - family-names: von Kietzell
+      given-names: Arno
+    - family-names: Macianskiene
+      given-names: Regina
+    - family-names: Jurevicius
+      given-names: Jonas

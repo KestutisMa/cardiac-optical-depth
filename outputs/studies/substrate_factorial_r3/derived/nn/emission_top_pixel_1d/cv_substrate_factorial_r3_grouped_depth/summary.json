@@ -1,0 +1,101 @@
+{
+  "k": 5,
+  "completed_folds": 5,
+  "cv_policy": "grouped_depth_interleaved",
+  "n_dataset_cases": 279,
+  "n_selected_cases": 279,
+  "label_range": {
+    "min_idx": 10,
+    "max_idx": 70,
+    "voxel_mm": 0.05
+  },
+  "pooled_test": {
+    "n": 279,
+    "rmse_mm": 0.4758440899626763,
+    "r": 0.8521099698019988,
+    "r2": 0.7169655025594905
+  },
+  "pooled_predictions_csv": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/pooled_test_predictions.csv",
+  "folds": [
+    {
+      "fold": 0,
+      "fold_dir": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/fold_00",
+      "metrics_test": {
+        "split": "test",
+        "n": 63,
+        "r": 0.8160169720649719,
+        "r2": 0.6031302213668823,
+        "rmse_mm": 0.6299760341644287,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 70,
+          "voxel_mm": 0.05
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "fold_dir": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/fold_01",
+      "metrics_test": {
+        "split": "test",
+        "n": 54,
+        "r": 0.8668745756149292,
+        "r2": 0.7480912804603577,
+        "rmse_mm": 0.4285830855369568,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 70,
+          "voxel_mm": 0.05
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "fold_dir": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/fold_02",
+      "metrics_test": {
+        "split": "test",
+        "n": 54,
+        "r": 0.941972017288208,
+        "r2": 0.8857482671737671,
+        "rmse_mm": 0.28863221406936646,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 70,
+          "voxel_mm": 0.05
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "fold_dir": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/fold_03",
+      "metrics_test": {
+        "split": "test",
+        "n": 54,
+        "r": 0.8962976932525635,
+        "r2": 0.8010716438293457,
+        "rmse_mm": 0.38085684180259705,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 70,
+          "voxel_mm": 0.05
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "fold_dir": "outputs/studies/substrate_factorial_r3/derived/nn/emission_top_pixel_1d/cv_substrate_factorial_r3_grouped_depth/fold_04",
+      "metrics_test": {
+        "split": "test",
+        "n": 54,
+        "r": 0.7831605672836304,
+        "r2": 0.5956791639328003,
+        "rmse_mm": 0.5429707765579224,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 70,
+          "voxel_mm": 0.05
+        }
+      }
+    }
+  ]
+}

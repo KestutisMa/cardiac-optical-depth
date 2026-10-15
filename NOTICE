@@ -1,0 +1,18 @@
+Required Notice: Copyright 2026 Kestutis Maciunas and contributors.
+Required Notice: Accompanying paper: Kestutis Maciunas et al., "Physics-guided deep learning inference of intramural slow-conduction depth from simulated epicardial optical mapping", Scientific Reports (accepted).
+Required Notice: Source: https://github.com/KestutisMa/cardiac-optical-depth
+
+Original software and model checkpoints: PolyForm Noncommercial License 1.0.0
+(LICENSE). Uses outside the permitted purposes require separate permission.
+Commercial licensing enquiries: open a GitHub issue to request a contact channel.
+Do not post confidential information in public issues.
+
+Prepared synthetic datasets and numerical result files under outputs/,
+excluding model checkpoints: Creative Commons Attribution-NonCommercial 4.0
+International (LICENSE-DATA).
+For data attribution, credit Kestutis Maciunas et al. and identify the paper
+and source repository listed above. Retain applicable notices and indicate
+changes as required by CC BY-NC 4.0.
+
+Third-party software remains subject to its own licence. No rights in
+third-party dependencies are granted by this notice. See THIRD_PARTY.md.

@@ -1,0 +1,8 @@
+{
+  "study_id": "depth_sweep_v2",
+  "dataset_name": "emission_top_pixel_1d",
+  "data_dir": "outputs/studies/depth_sweep_v2/derived/nn_dataset/emission_top_pixel_1d",
+  "k": 5,
+  "cv_policy": "interleaved",
+  "created_at": "2026-05-23T17:36:11+00:00"
+}

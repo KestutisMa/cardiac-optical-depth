@@ -1,0 +1,18 @@
+{
+  "cv_run_dir": "/work/outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_20260104T134115Z",
+  "metrics": {
+    "n": 71,
+    "corr_abs_err_depth": 0.5509894773107099,
+    "corr_std_total_depth": 0.7139078874566743,
+    "corr_std_total_abs_err": 0.31636147938243464,
+    "mean_std_total_mm": 0.2581919083024491,
+    "coverage95_total": 0.8732394366197183,
+    "mse_over_mean_std2_total": 1.2614955368633411,
+    "corr_std_ale_depth": 0.7072064369336905,
+    "corr_std_ale_abs_err": 0.3113254816050163,
+    "mean_std_ale_mm": 0.22031920896900517,
+    "corr_std_epi_depth": 0.6548286605286032,
+    "corr_std_epi_abs_err": 0.29489430356441965,
+    "mean_std_epi_mm": 0.13373872136120085
+  }
+}

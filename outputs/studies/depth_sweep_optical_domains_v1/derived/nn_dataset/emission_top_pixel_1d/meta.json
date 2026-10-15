@@ -1,0 +1,77 @@
+{
+  "created_at": "2026-07-27T13:37:12+00:00",
+  "study_id": "depth_sweep_optical_domains_v1",
+  "dataset_name": "emission_top_pixel_1d",
+  "kind": "combined_optical_parameter_domains",
+  "sources": [
+    {
+      "domain": "reference",
+      "study_id": "depth_sweep_opt_reference",
+      "dataset_dir": "outputs/studies/depth_sweep_opt_reference/derived/nn_dataset/emission_top_pixel_1d"
+    },
+    {
+      "domain": "low_absorption",
+      "study_id": "depth_sweep_opt_mua096_mus436",
+      "dataset_dir": "outputs/studies/depth_sweep_opt_mua096_mus436/derived/nn_dataset/emission_top_pixel_1d"
+    },
+    {
+      "domain": "high_absorption",
+      "study_id": "depth_sweep_opt_mua144_mus436",
+      "dataset_dir": "outputs/studies/depth_sweep_opt_mua144_mus436/derived/nn_dataset/emission_top_pixel_1d"
+    },
+    {
+      "domain": "low_scattering",
+      "study_id": "depth_sweep_opt_mua120_mus349",
+      "dataset_dir": "outputs/studies/depth_sweep_opt_mua120_mus349/derived/nn_dataset/emission_top_pixel_1d"
+    },
+    {
+      "domain": "high_scattering",
+      "study_id": "depth_sweep_opt_mua120_mus523",
+      "dataset_dir": "outputs/studies/depth_sweep_opt_mua120_mus523/derived/nn_dataset/emission_top_pixel_1d"
+    }
+  ],
+  "shape": {
+    "N": 360,
+    "L": 100
+  },
+  "domain_counts": {
+    "reference": 72,
+    "low_absorption": 72,
+    "high_absorption": 72,
+    "low_scattering": 72,
+    "high_scattering": 72
+  },
+  "non_control_cases": 355,
+  "depth": {
+    "min_index": 10,
+    "max_index": 80,
+    "unique_non_control": 71
+  },
+  "voxel": {
+    "length_um": 50.0,
+    "length_mm": 0.05
+  },
+  "time_axis": {
+    "kind": "ms",
+    "dt_ms_source": "raw/opencm/vm_voxels.h5:voxels.attrs['ep_timedt_ms']",
+    "time_indices_kind": "relative_to_peak",
+    "dt_ms": 1.0,
+    "length": 100
+  },
+  "preprocessing": {
+    "denoise": {
+      "kind": "ceemdan",
+      "trials": 500,
+      "noise_strength": 0.1,
+      "max_imf": null,
+      "base_seed": 20260723
+    },
+    "align": {
+      "kind": "max_dFdt",
+      "pre": 90,
+      "post": 9,
+      "padding": "edge"
+    }
+  },
+  "split_requirement": "Group all optical domains with the same depth into one CV fold."
+}

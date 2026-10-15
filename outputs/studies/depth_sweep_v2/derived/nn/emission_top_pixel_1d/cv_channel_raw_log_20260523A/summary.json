@@ -1,0 +1,110 @@
+{
+  "k": 5,
+  "cv_policy": "interleaved",
+  "n_cases": 72,
+  "label_range": {
+    "min_idx": 10,
+    "max_idx": 80,
+    "voxel_mm": 0.05
+  },
+  "test_rmse_mm_mean": 0.41760521531105044,
+  "test_rmse_mm_std": 0.04422520090969064,
+  "test_r_mean": 0.9483867168426514,
+  "test_r_std": 0.005169859177204186,
+  "test_r2_mean": 0.8316417336463928,
+  "test_r2_std": 0.03490088056985567,
+  "pooled_test": {
+    "n": 71,
+    "rmse_mm": 0.4197426736354828,
+    "r": 0.9449594020843506,
+    "r2": 0.8322057888629879
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "fold_dir": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/fold_00",
+      "metrics_test": {
+        "split": "test",
+        "n": 15,
+        "r": 0.9444183111190796,
+        "r2": 0.8354784250259399,
+        "rmse_mm": 0.43811169266700745,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": null
+    },
+    {
+      "fold": 1,
+      "fold_dir": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/fold_01",
+      "metrics_test": {
+        "split": "test",
+        "n": 14,
+        "r": 0.9522921442985535,
+        "r2": 0.8640864491462708,
+        "rmse_mm": 0.3715335726737976,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": null
+    },
+    {
+      "fold": 2,
+      "fold_dir": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/fold_02",
+      "metrics_test": {
+        "split": "test",
+        "n": 14,
+        "r": 0.9421431422233582,
+        "r2": 0.8051033020019531,
+        "rmse_mm": 0.44490674138069153,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": null
+    },
+    {
+      "fold": 3,
+      "fold_dir": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/fold_03",
+      "metrics_test": {
+        "split": "test",
+        "n": 14,
+        "r": 0.9486210346221924,
+        "r2": 0.7876988053321838,
+        "rmse_mm": 0.46434733271598816,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": null
+    },
+    {
+      "fold": 4,
+      "fold_dir": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/fold_04",
+      "metrics_test": {
+        "split": "test",
+        "n": 14,
+        "r": 0.9544589519500732,
+        "r2": 0.8658416867256165,
+        "rmse_mm": 0.36912673711776733,
+        "label_range": {
+          "min_idx": 10,
+          "max_idx": 80,
+          "voxel_mm": 0.05
+        }
+      },
+      "test_predictions_csv": null
+    }
+  ],
+  "pooled_test_predictions_csv": "outputs/studies/depth_sweep_v2/derived/nn/emission_top_pixel_1d/cv_channel_raw_log_20260523A/pooled_test_predictions.csv"
+}

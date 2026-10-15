@@ -1,0 +1,65 @@
+# --- required paths ---
+data_dir: outputs/studies/depth_sweep_v2/derived/nn_dataset/emission_top_pixel_1d
+checkpoint: best_depthcnn.pth
+
+# Set to false to disable uncertainty entirely (point estimate only).
+enable_uncertainty: false
+
+# --- runtime ---
+seed: 11
+batch_size: 32
+num_workers: 0
+
+# --- training schedule ---
+epochs: 180
+min_epochs: 40
+patience: 15
+lr: 0.001
+weight_decay: 1.0e-5
+grad_clip: 1.0
+
+# LR plateau scheduler
+plateau_factor: 0.5
+plateau_patience: 4
+plateau_min_lr: 1.0e-5
+
+# --- label/loss ---
+huber_beta: 0.75              # SmoothL1 beta (z-units)
+loss_weighting: true          # inverse-frequency bin weighting
+num_bins: 12
+weight_pow: 2.0               # >1 emphasizes rare depths more
+
+# --- input normalization (computed on TRAIN only) ---
+quantile_norm: true
+q_low: 0.001
+q_high: 0.999
+
+# --- train-time augmentation (lighter to help tails) ---
+aug_p: 0.25
+aug_noise_min: 0.0
+aug_noise_max: 0.0025
+aug_max_shift: 2
+aug_amp_min: 0.985
+aug_amp_max: 1.015
+
+# --- eval (stochastic) ---
+# Epistemic via MC-dropout only (cleanest RMSE). Re-enable TTA to stress-test.
+mc_samples: 50
+tta_samples: 1
+tta_noise: 0.0
+tta_max_shift: 0
+tta_amp_min: 1.0
+tta_amp_max: 1.0
+
+# --- uncertainty calibration ---
+calib_target_coverage: 0.95
+
+# --- visualization & outputs ---
+plot_unc: both                 # none | color | errorbar | both
+plot_raw_samples: true         # overlay MC/TTA samples
+samples_alpha: 0.12
+samples_jitter: 0.015
+
+save_plot: resnet_optical.png
+save_stochastic: stochastic_predictions.csv
+save_stochastic_raw: stochastic_samples_long.csv

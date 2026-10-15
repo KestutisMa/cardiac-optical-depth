@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-01-01T07:26:14+00:00",
+  "study_id": "depth_sweep_v2",
+  "outputs_root": "outputs",
+  "cases_root": "outputs/studies/depth_sweep_v2/cases",
+  "dataset_name": "emission_top_pixel_1d",
+  "source": {
+    "kind": "emission_detector_top",
+    "path": "raw/opencm/emission_detector_top.npy"
+  },
+  "extraction": {
+    "kind": "pixel_xy",
+    "roi_pixel": {
+      "x": 10,
+      "y": 10
+    },
+    "roi_box": null,
+    "roi_margin": null
+  },
+  "preprocessing": {
+    "denoise": {
+      "kind": "ceemdan",
+      "trials": 500,
+      "noise_strength": 0.1,
+      "max_imf": null
+    },
+    "align": {
+      "kind": "max_dFdt",
+      "pre": 90,
+      "post": 9,
+      "padding": "edge"
+    }
+  },
+  "artifacts": {
+    "signals_raw": "signals_raw.npy"
+  },
+  "labels": {
+    "depth": "ischemia_depth",
+    "thickness": "ischemia_thickness"
+  },
+  "time_axis": {
+    "kind": "ms",
+    "dt_ms_source": "raw/opencm/vm_voxels.h5:voxels.attrs['ep_timedt_ms']",
+    "time_indices_kind": "relative_to_peak",
+    "dt_ms": 1.0,
+    "length": 100
+  },
+  "voxel": {
+    "length_um": 50.0,
+    "length_mm": 0.05
+  },
+  "shape": {
+    "N": 72,
+    "L": 100
+  },
+  "resampling": {
+    "kind": "linear_interp_to_canonical_time_ms",
+    "note": "Applied only when a case time axis differs from the canonical study time axis; not intended as a denoiser."
+  },
+  "resampled_cases": [],
+  "skipped_cases": [],
+  "aligned_peak_indices": {
+    "control": 88,
+    "depth_010_thick_005": 89,
+    "depth_011_thick_005": 88,
+    "depth_012_thick_005": 89,
+    "depth_013_thick_005": 89,
+    "depth_014_thick_005": 88,
+    "depth_015_thick_005": 89,
+    "depth_016_thick_005": 89,
+    "depth_017_thick_005": 87,
+    "depth_018_thick_005": 88,
+    "depth_019_thick_005": 88,
+    "depth_020_thick_005": 89,
+    "depth_021_thick_005": 89,
+    "depth_022_thick_005": 89,
+    "depth_023_thick_005": 88,
+    "depth_024_thick_005": 88,
+    "depth_025_thick_005": 88,
+    "depth_026_thick_005": 88,
+    "depth_027_thick_005": 88,
+    "depth_028_thick_005": 88,
+    "depth_029_thick_005": 88,
+    "depth_030_thick_005": 87,
+    "depth_031_thick_005": 88,
+    "depth_032_thick_005": 89,
+    "depth_033_thick_005": 88,
+    "depth_034_thick_005": 88,
+    "depth_035_thick_005": 88,
+    "depth_036_thick_005": 88,
+    "depth_037_thick_005": 88,
+    "depth_038_thick_005": 88,
+    "depth_039_thick_005": 88,
+    "depth_040_thick_005": 88,
+    "depth_041_thick_005": 88,
+    "depth_042_thick_005": 89,
+    "depth_043_thick_005": 88,
+    "depth_044_thick_005": 89,
+    "depth_045_thick_005": 89,
+    "depth_046_thick_005": 88,
+    "depth_047_thick_005": 88,
+    "depth_048_thick_005": 89,
+    "depth_049_thick_005": 88,
+    "depth_050_thick_005": 88,
+    "depth_051_thick_005": 88,
+    "depth_052_thick_005": 88,
+    "depth_053_thick_005": 89,
+    "depth_054_thick_005": 88,
+    "depth_055_thick_005": 89,
+    "depth_056_thick_005": 88,
+    "depth_057_thick_005": 88,
+    "depth_058_thick_005": 89,
+    "depth_059_thick_005": 88,
+    "depth_060_thick_005": 88,
+    "depth_061_thick_005": 88,
+    "depth_062_thick_005": 88,
+    "depth_063_thick_005": 88,
+    "depth_064_thick_005": 88,
+    "depth_065_thick_005": 88,
+    "depth_066_thick_005": 88,
+    "depth_067_thick_005": 88,
+    "depth_068_thick_005": 89,
+    "depth_069_thick_005": 88,
+    "depth_070_thick_005": 89,
+    "depth_071_thick_005": 89,
+    "depth_072_thick_005": 88,
+    "depth_073_thick_005": 88,
+    "depth_074_thick_005": 89,
+    "depth_075_thick_005": 89,
+    "depth_076_thick_005": 89,
+    "depth_077_thick_005": 89,
+    "depth_078_thick_005": 89,
+    "depth_079_thick_005": 88,
+    "depth_080_thick_005": 88
+  }
+}

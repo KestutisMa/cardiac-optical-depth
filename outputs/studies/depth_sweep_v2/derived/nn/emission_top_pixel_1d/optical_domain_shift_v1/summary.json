@@ -1,0 +1,164 @@
+{
+  "reference_study_id": "depth_sweep_v2",
+  "reference_cv_run_id": "cv_20260104T134115Z",
+  "dataset_name": "emission_top_pixel_1d",
+  "supported_max_mm": 3.0,
+  "pre_specified_domains": [
+    {
+      "study_id": "depth_sweep_opt_mua096_mus436",
+      "label": "Low absorption",
+      "mua": 96.0,
+      "mus": 436.0
+    },
+    {
+      "study_id": "depth_sweep_opt_mua144_mus436",
+      "label": "High absorption",
+      "mua": 144.0,
+      "mus": 436.0
+    },
+    {
+      "study_id": "depth_sweep_opt_mua120_mus349",
+      "label": "Low scattering",
+      "mua": 120.0,
+      "mus": 348.8
+    },
+    {
+      "study_id": "depth_sweep_opt_mua120_mus523",
+      "label": "High scattering",
+      "mua": 120.0,
+      "mus": 523.2
+    }
+  ],
+  "metrics": [
+    {
+      "domain": "reference",
+      "label": "Reference",
+      "mua": 120.0,
+      "mus": 436.0,
+      "range": "full",
+      "n": 71,
+      "rmse_mm": 0.297681287390898,
+      "r": 0.9626427534644917,
+      "r2": 0.9156055744077743,
+      "rmse_delta_mm": 0.0,
+      "rmse_delta_percent": 0.0
+    },
+    {
+      "domain": "reference",
+      "label": "Reference",
+      "mua": 120.0,
+      "mus": 436.0,
+      "range": "le_3_mm",
+      "n": 51,
+      "rmse_mm": 0.1625842648401613,
+      "r": 0.9823115475222343,
+      "r2": 0.9511994300193412,
+      "rmse_delta_mm": 0.0,
+      "rmse_delta_percent": 0.0
+    },
+    {
+      "domain": "depth_sweep_opt_mua096_mus436",
+      "label": "Low absorption",
+      "mua": 96.0,
+      "mus": 436.0,
+      "range": "full",
+      "n": 71,
+      "rmse_mm": 0.5763632865682632,
+      "r": 0.9661055037187747,
+      "r2": 0.6836241612947995,
+      "rmse_delta_mm": 0.2786819991773652,
+      "rmse_delta_percent": 93.61757388915615
+    },
+    {
+      "domain": "depth_sweep_opt_mua096_mus436",
+      "label": "Low absorption",
+      "mua": 96.0,
+      "mus": 436.0,
+      "range": "le_3_mm",
+      "n": 51,
+      "rmse_mm": 0.3468236981314118,
+      "r": 0.971802312851275,
+      "r2": 0.7779322967817918,
+      "rmse_delta_mm": 0.18423943329125048,
+      "rmse_delta_percent": 113.31935072091918
+    },
+    {
+      "domain": "depth_sweep_opt_mua144_mus436",
+      "label": "High absorption",
+      "mua": 144.0,
+      "mus": 436.0,
+      "range": "full",
+      "n": 71,
+      "rmse_mm": 0.5719765244948934,
+      "r": 0.9516980715985591,
+      "r2": 0.6884217740732155,
+      "rmse_delta_mm": 0.27429523710399545,
+      "rmse_delta_percent": 92.14393000921373
+    },
+    {
+      "domain": "depth_sweep_opt_mua144_mus436",
+      "label": "High absorption",
+      "mua": 144.0,
+      "mus": 436.0,
+      "range": "le_3_mm",
+      "n": 51,
+      "rmse_mm": 0.6266832832406231,
+      "r": 0.9798619612371862,
+      "r2": 0.2749564532819041,
+      "rmse_delta_mm": 0.46409901840046175,
+      "rmse_delta_percent": 285.45137431148305
+    },
+    {
+      "domain": "depth_sweep_opt_mua120_mus349",
+      "label": "Low scattering",
+      "mua": 120.0,
+      "mus": 348.8,
+      "range": "full",
+      "n": 71,
+      "rmse_mm": 0.5464694064857961,
+      "r": 0.9680235288148605,
+      "r2": 0.7155916137945321,
+      "rmse_delta_mm": 0.24878811909489812,
+      "rmse_delta_percent": 83.57533027200458
+    },
+    {
+      "domain": "depth_sweep_opt_mua120_mus349",
+      "label": "Low scattering",
+      "mua": 120.0,
+      "mus": 348.8,
+      "range": "le_3_mm",
+      "n": 51,
+      "rmse_mm": 0.32133849723788943,
+      "r": 0.9741386307996389,
+      "r2": 0.8093690606021255,
+      "rmse_delta_mm": 0.15875423239772812,
+      "rmse_delta_percent": 97.64427852461705
+    },
+    {
+      "domain": "depth_sweep_opt_mua120_mus523",
+      "label": "High scattering",
+      "mua": 120.0,
+      "mus": 523.2,
+      "range": "full",
+      "n": 71,
+      "rmse_mm": 0.5191138036375431,
+      "r": 0.9540280391899687,
+      "r2": 0.7433532046926314,
+      "rmse_delta_mm": 0.22143251624664512,
+      "rmse_delta_percent": 74.38576948771141
+    },
+    {
+      "domain": "depth_sweep_opt_mua120_mus523",
+      "label": "High scattering",
+      "mua": 120.0,
+      "mus": 523.2,
+      "range": "le_3_mm",
+      "n": 51,
+      "rmse_mm": 0.5693770520859431,
+      "r": 0.9775758492456774,
+      "r2": 0.4014949896454686,
+      "rmse_delta_mm": 0.40679278724578183,
+      "rmse_delta_percent": 250.20427877550455
+    }
+  ]
+}
